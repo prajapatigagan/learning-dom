@@ -13,7 +13,7 @@
 
 //change for content...
 // let h1 = document.querySelector("h1");
-// h1.textContent = "HAY gagan kaise ho";
+// h1.textContent = "HAY ram kahise ho";
 // h1.innerText = "HAY gagan kaise hoooo";
 // h1.innerHTML = "HAY gagannnn kaise ho";
 
@@ -39,11 +39,11 @@
 // let a=document.querySelector("a");
 // a.removeAttribute("href");
 
-//daynamic dom manipulation...
+//Dynamic dom manipulation...
 
 //create element...
 // let s1=document.createElement("h1");
-// s1.textContent="gagan";
+// s1.textContent="big";
 // console.log(s1);
 // append element...
 // document.body.append(s1);
@@ -55,14 +55,14 @@
 
 
 // h1=document.createElement("h1");
-// h1.textContent="gagan kaise ho";
+// h1.textContent="ram kon ho";
 // document.querySelector("div").append(h1);
 // document.querySelector("div").prepend(h1);
 // document.querySelector("div").remove(h1);
 
 
-//syle...
-let h1=document.querySelector("h1");
+//style...
+// let h1=document.querySelector("h1");
 // console.dir(h1);
 // h1.classList.add("hulu");
 // h1.classList.remove("hulu");
