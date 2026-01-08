@@ -4,6 +4,95 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+
+          <!-- <style>
+            *{
+              margin: 0;
+              padding: 0;
+              font-family: sans-serif;
+              box-sizing: border-box;
+            }
+            html,body{
+              height: 100%;
+              width: 100%;
+            }
+            #main{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 100%;
+              width: 100%;
+              background: gray;
+            }
+            h1{
+              color: #555;
+              font-size: 100px;
+              font-weight: 600;
+              letter-spacing: normal;
+              -webkit-user-select: none;
+              -ms-user-select: none;
+              user-select: none;
+            }
+          </style> -->
+          <style>
+            *{
+              margin: 0;
+              padding: 0;
+              font-family: sans-serif;
+              box-sizing: border-box;
+            }
+            html,body{
+              height: 100%;
+              width: 100%;
+            }
+            #main{
+              padding: 50px;
+              height: 100%;
+              width: 100%;
+              background: gray;
+            }
+            input{
+              display: block;
+            }
+
+            #btn {
+              padding:12px 22px;
+              background-color: rgb(21, 212, 161);
+              color: white;
+              border-radius: 5px;
+            }
+            #btn:hover{
+              background-color: rgb(24,82,66);
+            }
+
+            .card{
+              max-width: 300px;
+              margin-top: 40px;
+              border-radius: 10px;
+              display:inline-block;
+              padding: 30px;
+              border: 2px solid white;
+            }
+            .profile{
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+              margin-bottom: 7px;
+             overflow: hidden;
+            }
+            .profile img{
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+            .card h5{
+              margin-top: 3px;
+            }
+            .card p{
+              font-size:12px;
+              margin-top: 10px; 
+            }
+          </style>
 </head>
 <body>
 <!-- <style>
@@ -85,14 +174,43 @@
           <!-- events or events handling...... -->
           <!-- <h1>Apple</h1> -->
           <!-- <input type="text" placeholder="Name"> -->
-           <h3 id="device">Select your device</h3>
+           <!-- <h3 id="device">Select your device</h3>
            <select title="Choose an option">
-             <option selected disabled>Choose an option</option>
+             <option Selected disabled>Choose an option</option>
              <option value="Laptop">Laptop</option>
              <option value="Mobile">Mobile</option>
              <option value="Tablet">Tablet</option>
              <option value="Desktop">Desktop</option>
-           </select>
+           </select> -->
+
+           
+           <!-- <div id="main"> <h1>p</h1>
+          </div> -->
+          <!-- <div id="main">
+            <input id="fileinput" type="file" title=" ">
+            <div id="btn">Upload file</div>
+          </div> -->
+
+          <div id="main">
+            <form action="">
+              <input type="text" placeholder="profile pic">
+              <input type="text" placeholder="name">
+              <input type="text" placeholder="occupation">
+              <input type="text" placeholder="info">
+              <input type="submit">
+            </form>
+
+            <!-- <div class="card">
+              <div class="profile">
+                <img src="https://images.pexels.com/photos/13876644/pexels-photo-13876644.jpeg" alt="">
+              </div>
+              <h3>Gagan</h3>
+              <h5>Cration Card</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quos corporis doloribus quae dolorem aperiam blanditiis obcaecati harum velit, odio quis tenetur, quas reprehenderit expedita atque rerum nam. Animi, tempore.</p>
+            </div> -->
+          </div>
+
+          
 
   <script src="script.js"></script>
   <script src="practics.js"></script>

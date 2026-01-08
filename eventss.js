@@ -39,17 +39,117 @@
 // });
 
 //change event...
-let list=document.querySelector("select");
-list.addEventListener("change",function(dets){
-  console.log(dets.target.value)
-})
+// let list=document.querySelector("select");
+// list.addEventListener("change",function(dets){
+//   console.log(dets.target.value)
+// })
 
 // let list=document.querySelector("select");
 // let device = document.querySelector("#device");
 // list.addEventListener("change", function(dets){
 //   device.textContent = "device selected";
 // });
-let device = document.querySelector("#device");
-list.addEventListener("change", function(dets){
-  device.textContent =`${dets.target.value} Selected`;
+// let device = document.querySelector("#device");
+// list.addEventListener("change", function(dets){
+//   device.textContent =`${dets.target.value} Selected`;
+// });
+
+//approach
+
+// let h1=document.querySelector("h1");
+// window.addEventListener("keydown",function(dets){
+//   if(dets.key===" "){
+//   h1.textContent="SPC";
+//   }else{
+//     h1.textContent=dets.key;
+//   }
+// })
+
+//select button..
+
+// let btn = document.querySelector("#btn");
+// let fileinput = document.querySelector("#fileinput");
+// btn.addEventListener("click", function(){
+//   fileinput.click();
+// });
+// fileinput.addEventListener("change",function(dets){
+//   // console.log(dets.target.files[0].name);
+//   // btn.textContent = dets.target.files[0].name;
+//   const file=dets.target.files[0];
+//   if(file){
+//     btn.textContent=file.name;
+//   }
+// });
+
+// Form..
+
+// let form=document.querySelector("form");
+// form.addEventListener("submit",function(dets){
+//   dets.preventDefault();
+//   console.log("form submitted");
+// });
+
+
+// show the form value..
+// let form = document.querySelector("form");
+// let inputs = document.querySelectorAll("input");
+
+// form.addEventListener("submit", function(e){
+//   e.preventDefault();
+
+//   console.log(inputs[0].value);
+//   console.log(inputs[1].value);
+//   console.log(inputs[2].value);
+//   console.log(inputs[3].value);
+//   console.log(inputs[4].value);
+// });
+
+// create a card...
+let form = document.querySelector("form");
+let inputs = document.querySelectorAll("input");
+let main = document.querySelector("#main");
+
+form.addEventListener("submit", function(e){
+  e.preventDefault();
+
+  // Card div
+  let card = document.createElement("div");
+  card.classList.add("card");
+
+  // Profile div
+  let profile = document.createElement("div");
+  profile.classList.add("profile");
+
+  // Image
+  let img = document.createElement("img");
+  img.setAttribute("src",inputs[0].value);
+
+  // Name
+  let h3 = document.createElement("h3");
+  h3.textContent = inputs[1].value;
+
+  // Profession
+  let h5 = document.createElement("h5");
+  h5.textContent = inputs[2].value;
+
+  // Description
+  let p = document.createElement("p");
+  p.textContent = inputs[3].value;
+
+  // Append elements
+  profile.appendChild(img);
+  card.appendChild(profile);
+  card.appendChild(h3);
+  card.appendChild(h5);
+  card.appendChild(p);
+
+  // Add card to main container
+  main.appendChild(card);
+
+  //empty for card
+  inputs.forEach(function(input){
+    if(input.type!=="submit"){
+      input.value = "";
+    }
+  });
 });
