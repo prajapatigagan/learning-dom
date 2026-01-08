@@ -105,36 +105,36 @@
 // });
 
 // create a card...
-let form = document.querySelector("form");
-let inputs = document.querySelectorAll("input");
-let main = document.querySelector("#main");
+let form=document.querySelector("form");
+let inputs=document.querySelectorAll("input");
+let main=document.querySelector("#main");
 
 form.addEventListener("submit", function(e){
   e.preventDefault();
 
   // Card div
-  let card = document.createElement("div");
+  let card=document.createElement("div");
   card.classList.add("card");
 
   // Profile div
-  let profile = document.createElement("div");
+  let profile=document.createElement("div");
   profile.classList.add("profile");
 
   // Image
-  let img = document.createElement("img");
+  let img=document.createElement("img");
   img.setAttribute("src",inputs[0].value);
 
   // Name
-  let h3 = document.createElement("h3");
-  h3.textContent = inputs[1].value;
+  let h3=document.createElement("h3");
+  h3.textContent=inputs[1].value;
 
   // Profession
-  let h5 = document.createElement("h5");
-  h5.textContent = inputs[2].value;
+  let h5=document.createElement("h5");
+  h5.textContent=inputs[2].value;
 
   // Description
-  let p = document.createElement("p");
-  p.textContent = inputs[3].value;
+  let p=document.createElement("p");
+  p.textContent=inputs[3].value;
 
   // Append elements
   profile.appendChild(img);
