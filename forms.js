@@ -41,7 +41,7 @@ let passwordInput=document.querySelector("#password");
 
 form.addEventListener("submit",function(e){
   e.preventDefault();
-  const emailregex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])(?=\S+$).{8,}$/;
 
@@ -53,7 +53,7 @@ form.addEventListener("submit",function(e){
   let name=nm.value.trim();
 
   //validation
-  let isEmailValid=emailregex.test(email);
+  let isEmailValid=emailRegex.test(email);
   let isPasswordValid=passwordRegex.test(password);
   let isNameValid=nameRegex.test(name);
 
